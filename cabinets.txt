@@ -1,0 +1,4 @@
+# ville | adresse | jours | horaires | lien Doctolib
+Rueil-Malmaison | 000 rue du Truc | Lundi et Mardi | 17h – 20h | https://www.google.com
+Rueil-Malmaison | 20 passage du Bidule | Samedi | 9h – 20h | https://www.google.com
+Suresnes | 30 avenue de la Chose | Mercredi | 15h – 20h | https://www.google.com
