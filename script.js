@@ -14,6 +14,8 @@ async function chargerCabinets() {
             lignes.forEach(ligne => {
                 const [ville, adresse, jours, horaires, lien] =
                     ligne.split("|").map(p => p.trim());
+                // const [ville, adresse, jours, lien] =
+                //     ligne.split("|").map(p => p.trim());
 
                 if (!ville || !adresse) return; // ligne incomplète
 
@@ -30,7 +32,7 @@ async function chargerCabinets() {
                 // Horaires
                 const blocHoraires = document.createElement("div");
                 blocHoraires.className = "cabinet-horaires";
-                blocHoraires.append(jours || "", document.createElement("br"), horaires || "");
+                blocHoraires.append(jours || ""); //, document.createElement("br"), horaires || "");
 
                 cabinet.append(blocAdresse, blocHoraires);
 
@@ -55,8 +57,8 @@ async function chargerCabinets() {
 
 
     // L'adresse est coupée en morceaux pour ne pas apparaître en clair dans le code
-    const partieLocale = ["mon", "adresse", "mail"].join("_");
-    const domaine = ["qqchose", "com"].join(".");
+    const partieLocale = ["osteo", "lea", "bdc"].join("");
+    const domaine = ["gmail", "com"].join(".");
     const adresse = partieLocale + "@" + domaine;
 
     const bouton = document.getElementById("mail");
